@@ -1,0 +1,145 @@
+.popular-modals {
+    width: auto;
+    height: auto;
+    background: linear-gradient(90deg, #FFE472 0%, #F8CC55 100%, #FBD846 100%);
+
+    margin-top: 130px;
+}
+
+.title h2 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #333333;
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+.cards {
+    display: grid;
+    /* Автоматически заполняем на всю ширину grid-контейнера */
+    grid-template-columns: repeat(auto-fill, 360px);
+    width: 100%;
+    max-width: 1190px; /* Ширина grid-контейнера */
+    justify-content: center;
+    justify-items: center; /* Размещаем карточку по центру */
+    column-gap: 30px; /* Отступ между колонками */
+    row-gap: 20px; /* Отступ между рядами */
+    margin: 0 auto 0 auto;
+    
+}
+.card {
+    width: 360px;
+    height: 420px;
+    background-color: white;
+    background: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(51, 51, 51, 0.05);
+}
+
+.card:hover {
+    border: 3px solid #99CB38;
+}
+
+.opisanie {
+    margin: 25px 25px auto 25px;
+}
+
+.opisanie p {
+    cursor: pointer;
+}
+
+.cost-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cost span {
+    text-decoration: line-through;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: line-through;
+    color: #B2B2B2;
+}
+.cost p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    color: #99CB38;
+}
+
+.elipse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 40px; 
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #F4F4F4;
+}
+
+.d24 {
+    position: absolute;
+    background: #99CB38;
+    height: 3px;
+    width: 60%;
+}
+.d24 {
+    position: absolute;
+    background: #99CB38;
+    height: 3px;
+    width: 60%;
+}
+
+.d24:nth-child(1) { transform: rotate(-90deg) }
+.elipse:hover{ background: #99CB38 }
+.elipse:hover .d24{ background: #F4F4F4 }
+
+
+.modals-btn {
+    width: 260px;
+    height: 60px;
+    align-items: center;
+    background: linear-gradient(269.89deg, #99CB38 0.07%, #C0F35B 99.89%);
+    box-shadow: 10px 10px 20px rgba(255, 216, 111, 0.4);
+    border-radius: 30px;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 28px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+}
+
+.--- {
+    padding-bottom: 20px;
+}
+
+@media (max-width:420px) {
+    .card img {
+        max-width: 320px;
+    }
+    .card {
+        max-width: 320px;
+        height: 400px;
+    }
+    .title h2 {
+        padding: 0;
+        padding-top: 10px;
+        font-size:24px;
+
+    }
+} 

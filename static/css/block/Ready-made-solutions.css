@@ -1,0 +1,40 @@
+.Ready-made-solutions-card{
+    position: relative;
+    width: 555px;
+    height: 433px;
+    
+}
+
+.Ready-made-solutions-card-plus{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+
+.Ready-made-solutions-img {
+    display: grid;
+    /* Автоматически заполняем на всю ширину grid-контейнера */
+    grid-template-columns: repeat(auto-fill, 555px);
+    width: 100%;
+    max-width: 1190px; /* Ширина grid-контейнера */
+    justify-content: center;
+    justify-items: center; /* Размещаем карточку по центру */
+    column-gap: 30px; /* Отступ между колонками */
+    row-gap: 30px; /* Отступ между рядами */
+    padding-bottom: 50px;
+}
+
+@media (max-width:580px) {
+    .Ready-made-solutions-img {
+        
+        grid-template-columns: repeat(auto-fill, 330px);
+        
+    }
+    .Ready-made-solutions-card img{
+        width: 330px;
+    }
+    .Ready-made-solutions-card {
+        width: 330px;
+        height: 250px;
+    }
+}

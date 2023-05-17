@@ -1,0 +1,48 @@
+.kitcen-text-card {
+    display: flex;
+}
+
+.kitcen-text-card-head h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 30px;
+    text-align: left;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.kitcen-text-card-head p {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: justify;
+    color: #000000;
+}
+
+.kitcen-text-card:nth-child(1) {
+    margin-top: 115px;
+}
+.kitcen-text-card {
+    margin-top: 63px;
+
+}
+
+@media(max-width:900px) {
+    .kitcen-text-card img {
+        display: none;
+    }
+    .kitcen-text-card-head p {
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .kitcen-text-card {
+        margin-top: 0px;
+    }
+    .kitcen-text-card:nth-child(1) {
+        margin-top: 30px;
+    }
+}
