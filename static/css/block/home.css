@@ -220,6 +220,17 @@ button {
         height: 60px;
     }
 }
+@media (max-width:590px){
+    .head-qviz h2{
+        font-size: 18px;
+    }
+    .head-qviz img {
+        display: none;
+    }
+    .head-qviz span {
+        display: none;
+    }
+}
 
 @media (max-width:540px) {
     .head-content {
@@ -288,5 +299,8 @@ button {
     }
     .terms {
         max-width: 160px;
+    }
+    .head-qviz h2 {
+        font-size: 18px !important;
     }
 }
